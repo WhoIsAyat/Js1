@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Секундомер</title>
+</head>
+<body>
+    <div class="content">
+    
+    <div class="item">
+        <div class="title"><h1>Секундомер на Js</h1></div>
+    <div class="clock">
+        <div class="block"><p id="sec"  class="timer">0</p> <p class="p">sec</p></div>
+        <div class="block"><p id="min"  class="timer">0</p>  <p class="p">min</p></div>
+        <div class="block"><p id="hour" class="timer">0</p> <p class="p">hour</p></div>
+    </div>
+    <div class="start-section "><button class="startButton" id="btn">Start</button>
+        <button id="Stop" class="stop-section active">Stop</button>
+    </div>
+
+
+</div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+<style>
+    body{
+        background-color: rgb(0, 25, 30);
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20vh;
+    }
+    .title{
+        color: cornflowerblue;
+    }
+    .clock{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 25px;
+        border: 2px solid rgb(225, 0, 0);
+        padding: 25px;
+        max-width: 750px;
+        border-radius: 25px;
+       
+    }
+
+    .block{
+        width: 150px;
+        text-align: center;
+        font-size: 22px;
+        border-radius: 25px;
+        border: 2px solid rgb(42, 10, 223);
+        padding: 25px;
+    }
+    .p{
+        font-family: sans-serif;
+        color: white;
+    }
+    .timer{
+        color: blueviolet;
+    }
+    .start-section{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .startButton{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        border: 2px solid grey;
+        padding: 15px;
+        align-self: flex-end;
+        width: 120px;
+        background-color: rgb(10, 6, 48);
+        color: blue;
+    }
+    .stop-section{
+        background-color:rgb(6, 2, 15);
+        color: blue;
+        padding: 15px;
+        font-size: 15px;
+        border: 2px solid rgb(97, 94, 110);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 120px;
+    }
+    .active{
+        display: none;
+      
+    }
+
+    @media (max-width: 800px) {
+        .clock{
+            max-width: 670px;
+        }
+    }
+    @media (max-width: 750px) {
+        .clock{
+            max-width: 550px;
+        }
+    }
+    @media (max-width: 650px) {
+        .clock{
+            max-width: 500px;
+        }
+        .block{
+            padding: 20px;
+        }
+    }
+    @media (max-width: 600px) {
+        .clock{
+            max-width: 500px;
+            padding: 10px;
+        }
+    }
+    @media (max-width: 550px) {
+        .clock{
+            max-width: 400px;
+            padding: 5px;
+        }
+        .block{
+            padding: 10px;
+        }
+    }
+    @media (max-width: 450px) {
+        .clock{
+            max-width: 320px;
+            padding: 5px;
+        }
+    }
+    @media (max-width: 400px) {
+        .clock{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+        }
+        .item{
+            padding: 0;
+        }
+    }
+</style>
+</html>
